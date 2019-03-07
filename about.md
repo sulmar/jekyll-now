@@ -1,15 +1,22 @@
 ---
 layout: page
-title: About
+title: O mnie
 permalink: /about/
 ---
 
-Some information about you!
 
-### More Information
+### Wykształcenie
+mgr informatyki
+Absolwent Uniwersytet A. Mickiewicza 
+w Poznaniu, 
+Wydział Matematyki i Informatyki
 
-A place to include any other types of information that you'd like to include about yourself.
 
-### Contact me
+### Doświadczenie
+20 lat. Rozwiązania z zakresu logistyki, monitoringu pojazdów i analizy danych 
+z użyciem platformy .NET i Crystal Reports
 
-[email@domain.com](mailto:email@domain.com)
+
+### Kontakt
+
+[marcin.sulecki@sulmar.pl](mailto:marcin.sulecki@sulmar.pl)
