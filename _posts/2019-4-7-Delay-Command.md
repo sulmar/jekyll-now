@@ -5,7 +5,7 @@ title: Komenda z opóźnionym zapłonem
 
 Implementacja RelayCommand z opóźnieniem wykonania akcji. Wykonanie komendy można anulować poprzez ponowne wciśnięcie przycisku.
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+![_config.yml]({{ site.baseurl }}/images/start-stop-engine-button.jpg)
 
 
 
