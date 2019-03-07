@@ -3,11 +3,13 @@ layout: post
 title: Komenda z opóźnionym zapłonem
 ---
 
-Implementacja RelayCommand z opóźnieniem wykonania akcji.
+Implementacja RelayCommand z opóźnieniem wykonania akcji. Wykonanie komendy można anulować poprzez ponowne wciśnięcie przycisku.
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+
+
+DelayRelayCommand.cs
 
 ~~~ csharp
 public class DelayRelayCommand : ICommand
@@ -54,4 +56,24 @@ public class DelayRelayCommand : ICommand
             
         }
     }
+~~~
+
+
+ViewModel.cs
+~~~ csharp
+ public class ShellViewModel : ViewModelBase
+{
+    public ICommand FireCommand { get; private set; }
+
+    public ShellViewModel()
+    {   
+        FireCommand = new DelayRelayCommand(() => Fire(), delay: TimeSpan.FromSeconds(5));
+    }
+
+    private void Fire()
+    {
+
+    }
+
+}
 ~~~
