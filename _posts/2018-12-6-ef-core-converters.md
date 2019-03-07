@@ -3,6 +3,8 @@ layout: post
 title: Konwertery w EF Core 2.1
 ---
 
+Czasami sposób zapisu wartości jakiejś właściwości w bazie danych różni się od tej zdefiniowanej w klasie.
+
 # Przykład konwertera EF Core 2.1
 
 ## Wstęp
