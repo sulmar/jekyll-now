@@ -5,13 +5,10 @@ title: Komenda z opóźnionym zapłonem
 
 Implementacja RelayCommand z opóźnieniem wykonania akcji. Wykonanie komendy można anulować poprzez ponowne wciśnięcie przycisku.
 
-![_config.yml]({{ site.baseurl }}/images/start-stop-engine-button.jpg)
-
-
 
 DelayRelayCommand.cs
 
-~~~ csharp
+''' csharp
 public class DelayRelayCommand : ICommand
     {
         public event EventHandler CanExecuteChanged;
@@ -56,11 +53,11 @@ public class DelayRelayCommand : ICommand
             
         }
     }
-~~~
+'''
 
 
 ViewModel.cs
-~~~ csharp
+''' csharp
  public class ShellViewModel : ViewModelBase
 {
     public ICommand FireCommand { get; private set; }
@@ -76,4 +73,4 @@ ViewModel.cs
     }
 
 }
-~~~
+'''
