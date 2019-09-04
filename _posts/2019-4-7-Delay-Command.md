@@ -8,7 +8,7 @@ Implementacja RelayCommand z opóźnieniem wykonania akcji. Wykonanie komendy mo
 
 DelayRelayCommand.cs
 
-''' csharp
+
 public class DelayRelayCommand : ICommand
     {
         public event EventHandler CanExecuteChanged;
@@ -53,7 +53,8 @@ public class DelayRelayCommand : ICommand
             
         }
     }
-'''
+    
+
 
 
 ViewModel.cs
